@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title class="appTitle"></title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="app.js"></script>
+
+</head>
+    <body>
+        <table id="gameZone">          
+            <tr>
+                <td>
+                    <h1 class="appTitle"></h1>
+                    <aside id="scoreBoard">
+                        <h3>Hi-Score</h3>
+                        <p id="hiScore">0</p>
+                        <h3>Score</h3>
+                        <p><span id="score">0</span></p>
+                        <h3>Rows</h3>
+                        <p><span id="rows">0</span>
+                        <h3>Level</h3>
+                        <p><span id="level">0</span>
+                    </aside>
+                    <h2>Next</h2>
+                    <canvas id="previewBoard"></canvas>
+                    <h2>Controls</h2>
+                    <h3>Pause</h3>
+                    <p>&lt;Space Bar&gt;</p>
+                    <h3>New Game</h3>
+                    <p>&lt;Return&gt;</p>
+                    <h3>Quit Game</h3>
+                    <p> &lt;Escape&gt;</p>
+                </td>
+                <td>                    
+                    <canvas id="gameBoard"></canvas>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

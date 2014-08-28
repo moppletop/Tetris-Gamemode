@@ -1,0 +1,52 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background: #efefef;
+}
+
+h1, h2, h3{
+    margin: 5px;
+}
+
+p {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+#gameZone {
+    margin: 0 auto;
+}
+
+#previewBoard {
+    margin: 5px 0 5px 5px;
+    border: 5px solid white;
+}
+
+#gameBoard {
+    margin: 5px;
+}
+
+#gameZone {
+    background: #000000;
+    border: 1px solid black;
+}
+
+#gameZone td {
+    vertical-align: top;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#scoreBoard {
+    padding: 10px;
+}
+
+canvas {
+    background: white;
+    margin: 0;
+    padding: 0;
+}
