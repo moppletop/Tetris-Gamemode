@@ -986,7 +986,7 @@ var Game = (function () {
 })();
 
 window.onload = function () {
-    App.setTitle("EvTris");
+    App.setTitle("Tetris");
 
     var gameZoneElement = HTMLUtil.getEl("gameZone");
     var gameZone = new GameZone(gameZoneElement);
