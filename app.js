@@ -475,7 +475,6 @@ var ShapeType;
     ShapeType[ShapeType["S"] = 4] = "S";
     ShapeType[ShapeType["O"] = 5] = "O";
     ShapeType[ShapeType["I"] = 6] = "I";
-		ShapeType[ShapeType["U"] = 7] = "U";
 })(ShapeType || (ShapeType = {}));
 
 var Shape = (function () {
@@ -509,8 +508,6 @@ var GameShapes = (function () {
         this.shapes[2 /* T */] = new Shape(2 /* T */, Colours.Purple, new Rotation(0 /* Up */, new Coords(1, 1), new Coords(0, 2), new Coords(1, 2), new Coords(2, 2)), new Rotation(1 /* Right */, new Coords(0, 0), new Coords(0, 1), new Coords(1, 1), new Coords(0, 2)), new Rotation(2 /* Down */, new Coords(0, 0), new Coords(1, 0), new Coords(2, 0), new Coords(1, 1)), new Rotation(3 /* Left */, new Coords(2, 0), new Coords(1, 1), new Coords(2, 1), new Coords(2, 2)), new Rotation(4 /* Preview */, new Coords(1.5, 1), new Coords(0.5, 2), new Coords(1.5, 2), new Coords(2.5, 2)));
 
         this.shapes[3 /* Z */] = new Shape(3 /* Z */, Colours.Red, new Rotation(0 /* Up */, new Coords(0, 1), new Coords(1, 1), new Coords(1, 2), new Coords(2, 2)), new Rotation(1 /* Right */, new Coords(1, 0), new Coords(0, 1), new Coords(1, 1), new Coords(0, 2)), new Rotation(2 /* Down */, new Coords(0, 0), new Coords(1, 0), new Coords(1, 1), new Coords(2, 1)), new Rotation(3 /* Left */, new Coords(2, 0), new Coords(1, 1), new Coords(2, 1), new Coords(1, 2)), new Rotation(4 /* Preview */, new Coords(0.5, 1), new Coords(1.5, 1), new Coords(1.5, 2), new Coords(2.5, 2)));
-				
-				this.shapes[7 /* U */] = new Shape(7 /* U */, Colours.Lime, new Rotation(0 /* Up */, new Coords(0, 1), new Coords(2, 1), new Coords(1, 2), new Coords(2, 2)), new Rotation(1 /* Right */, new Coords(1, 0), new Coords(1, 1), new Coords(2, 1), new Coords(0, 2)), new Rotation(2 /* Down */, new Coords(0, 0), new Coords(2, 0), new Coords(1, 1), new Coords(2, 1)), new Rotation(3 /* Left */, new Coords(2, 0), new Coords(3, 1), new Coords(2, 1), new Coords(1, 2)), new Rotation(4 /* Preview */, new Coords(0.5, 1), new Coords(2.5, 1), new Coords(1.5, 2), new Coords(2.5, 2)));
 
     }
     GameShapes.prototype.ensureShapeBag = function () {
@@ -546,7 +543,6 @@ var GameShapes = (function () {
         this.addShapeTypeToBag(4 /* S */);
         this.addShapeTypeToBag(2 /* T */);
         this.addShapeTypeToBag(3 /* Z */);
-	      this.addShapeTypeToBag(7 /* U */);
     };
     return GameShapes;
 })();
@@ -1004,4 +1000,3 @@ window.onload = function () {
     var game = new Game(gameZone, gameBoard, previewBoard);
     game.run();
 };
-//# sourceMappingURL=app.js.map
